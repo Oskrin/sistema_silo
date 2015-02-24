@@ -1,0 +1,225 @@
+.form-login {
+    background: #232323;
+    right: 0px;
+    margin: 0px auto;   
+    margin-top:10px;
+    padding-bottom: 50px;
+    width: 400px;
+}
+/* header */
+.formacceso .header {
+    height:60px;
+    background: #1b1b1b;
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+    text-transform:uppercase;
+    padding-top: 20px;
+    color:#4C6600;
+}                            
+.formacceso .link-head-left {
+    display:block;
+    float:left;
+    height:60px;
+    width:60px;
+    border-right:1px solid #232323;
+}                                                      
+/* avatar */
+.formacceso .avatar {
+    margin-top:25px;
+    text-align:center;
+}
+.formacceso .avatar img{
+    width:180px;
+    height:180px;
+    border:15px solid #1B1B1B;
+    -webkit-border-radius: 180px;
+    -moz-border-radius: 180px;
+    border-radius: 180px;
+}
+.formacceso .avatar img:hover{
+    
+    border:15px solid #4C6600;
+    transition: all 2s ease-in-out;
+   
+}
+
+/* inputs */
+.formacceso .inputs {
+    margin-top:10px;
+    color:#4d4d4d;
+}
+.formacceso .inputs input[type="text"], .inputs [type="password"], .inputs [type="email"] {
+    width:340px;
+    height:45px;
+    background:#1b1b1b;
+    color:#4C6600;
+    font-size:16px;
+    margin-top:15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border:0;
+    margin-left:20px;
+    padding:0px 10px;
+}
+
+/* info box */
+.formacceso .link-1 {
+    margin-top:15px;
+    margin-left:20px;
+    float:left;
+    color:#4d4d4d;
+}
+.formacceso input[type="checkbox"] {
+    display:none;
+}
+
+.formacceso input[type="checkbox"] + label {
+    font-size:13px;
+}
+.formacceso input[type="checkbox"] + label span {
+    display:inline-block;
+    width:22px;
+    height:22px;
+    vertical-align:middle;
+    background:url(../images/check_radio_sheet.png) -1px top no-repeat;
+    background-position:-0px 0px; 
+    cursor:pointer;
+}
+.formacceso input[type="checkbox"]:checked + label span {
+    background:url(../images/check_radio_sheet.png) -23px top no-repeat;
+}
+.formacceso .link-2 {
+    float:right;
+    margin-top:15px;
+    margin-right:20px;
+}
+.formacceso .link-2 a, .link-2 a:hover {
+    color:#4d4d4d;
+}
+.formacceso .link-2 a:hover {
+    text-decoration:none;
+}
+
+/* send button */
+.formacceso .button-login input[type="submit"] {
+    width:360px;
+    height:55px;
+    margin-left:20px;
+    margin-top:25px;
+    font-size:18px;
+    font-weight:bold;
+    text-transform:uppercase;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    border:0;
+    
+    background: #4C6600;
+}
+.formacceso .button-login input[type="submit"]:hover { opacity:0.9; }
+.formacceso .button-login input[type="submit"]:active {
+    top: 3px;
+    background: #4C6600;
+    box-shadow: inset 0 1px 2px #ba3c30;
+}
+/* footer */
+.formacceso .footer-login {
+    margin-top:20px;
+    padding-top:25px;
+    height:65px;
+    background:#1b1b1b;
+
+}
+.formacceso .social-links {
+    list-style:none;
+    margin-left:105px;
+}
+.formacceso .social-links li{
+    float:left;
+}
+.formacceso .social-links li a{
+    display:block;
+    width:45px;
+    height:45px;
+    margin-right:15px;
+}
+.formacceso .social-links li a span{
+    display:block;
+    text-indent:-9999px;
+    margin-left:20px;
+    width:45px;
+    height:45px;
+}
+.formacceso .social-links li a:hover span{ opacity:0.9; }
+.formacceso .social-links li.facebook a span{
+    background-image:url(../images/facebook.png);
+}
+.formacceso .social-links li.twitter a span{
+    background-image:url(../images/twitter.png);
+}
+.formacceso .social-links li.google-plus a span{
+    background-image:url(../images/google.png);
+}
+
+.formacceso .link-to-page {
+    text-align:center;
+    color:#1b1b1b;
+    margin-top:20px;
+}
+.formacceso .link-to-page a {
+    color:#e84c3d;
+}
+
+/************** CONFIG **************/
+.formacceso .config-box
+{ 
+   display: none;
+   width:74px;
+   height:134px;
+   background:url(../images/white-color-bg.png);
+   font-size:14px;
+   color:#ccc;
+   margin-left:410px;
+   padding:15px 15px 15px 22px;
+   position:absolute;
+   text-align:left;
+} 
+.formacceso .colors {
+    margin-left:-10px;
+}
+.formacceso .colors a {
+    margin:5px 0px 5px 12px;
+    display:block;
+    float:left;
+    width:30px;
+    height:30px;
+}
+.formacceso .style-bg {
+    margin-top:10px;
+    margin-left:3px;
+}
+.formacceso .style-bg a{
+    color:#4d4d4d;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight:normal;
+    text-transform:none;
+    text-decoration:none;
+    padding-left:25px;
+    background: url(../images/settings/no-active.png) no-repeat;
+    margin-bottom:5px;
+    display:block;
+}
+.formacceso .style-bg a.active{ background:url(../images/settings/active.png) no-repeat; }
+.formacceso .main-item:focus ~ .config-box, 
+.formacceso .main-item:active ~ .config-box, 
+.formacceso .config-box:hover 
+{ 
+   display: block; 
+   color: red;
+} 
+                            
