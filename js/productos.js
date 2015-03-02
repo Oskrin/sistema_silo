@@ -569,6 +569,8 @@ function inicio() {
     $("#utilidad_minorista").attr("maxlength", "5");
     $("#utilidad_mayorista").attr("maxlength", "5");
     $("#precio_compra").keypress(Valida_punto);
+    $("#precio_minorista").keypress(Valida_punto);
+    $("#precio_mayorista").keypress(Valida_punto);
     $("#utilidad_minorista").keypress(ValidNum);
     $("#utilidad_mayorista").keypress(ValidNum);
     $("#descuento").keypress(ValidNum);
