@@ -19,6 +19,7 @@ session_destroy();
         <link href="../css/pages/signin.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="../css/alertify.core.css" />
         <link rel="stylesheet" href="../css/alertify.default.css" id="toggleCSS" />
+        <link rel="stylesheet" href="../css/animate.css">
         <link rel="stylesheet" href="../css/logo.css" id="dclogo" />
 
         <!--<script src="js/jquery-1.7.2.min.js"></script>-->
@@ -36,8 +37,8 @@ session_destroy();
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;">
-        <div class="account-container">
-            <div class="content clearfix">
+        <div class="account-container ">
+            <div class="content clearfix animated zoomInRight">
                 <form action="" method="post" name="form_admin">
                     <h1>Usuario</h1>
                     <div class="login-fields">
@@ -61,23 +62,7 @@ session_destroy();
                         <button class="button btn btn-success btn-large" id="btnIngreso">Ingresar</button>
                     </div>
                 </form>
-            </div>
-            <div class="member span4">
-                <div class="member-thumbnail">
-                    <a href="#">
-                        <img src="../images/system.jpg" alt="avatar" />
-                    </a>
-                </div>
-                <ul class="member-menu">
-                    <li class="path-wrapper">
-                        <span class="overlay"></span>
-                        <div class="member-data">
-                            <h3>P&S Systems</h3>
-                            <div class="position">Desarrollo de Software</div>
-                        </div> 
-                    </li>
-                </ul>
-            </div>
+            </div>            
         </div> 
     </body>
 </html>
