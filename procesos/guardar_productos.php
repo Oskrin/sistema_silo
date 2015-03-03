@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 include 'base.php';
 conectarse();
@@ -13,6 +12,7 @@ while ($row = pg_fetch_row($consulta)) {
 }
 $cont++;
 ////////////////////////////////////////
+//
 ////////////guardar productos///////////
 $valor = number_format($_POST['precio_compra'], 2, '.', '');
 $valor2 = number_format($_POST['precio_minorista'], 2, '.', '');

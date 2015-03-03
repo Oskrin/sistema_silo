@@ -43,7 +43,7 @@ function menu_1() {
 
                     <li><a href="" target="_parent">Cartera</a>
                         <ul>
-                            <!--<li><a href="../html/cuentasCobrar.php" target="_blank">Cuentas por cobrar</a></li>-->
+                            <li><a href="../html/cuentasCobrar.php" target="_blank">Cuentas por cobrar</a></li>
                             <li><a href="../html/cuentasPagar.php" target="_blank">Cuentas por pagar</a></li>
                             <li><a href="" target="_blank">Externas</a>
                             <ul>
