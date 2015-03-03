@@ -196,10 +196,10 @@ $cont1++;
                                                             </tr>  
                                                         </table>
 
-                                                        <table cellpadding="2" style="display: none">
+                                                        <table cellpadding="2">
                                                             <tr>
-                                                                <td><label for="formas2"  style="width: 100%">Formas de Pago:</label></td>
-                                                                <td><select name="formas2" id="formas2">
+                                                                <td><label for="formas"  style="width: 100%">Formas de Pago:</label></td>
+                                                                <td><select name="formas" id="formas">
                                                                         <option value="Contado">Contado</option>
                                                                         <option value="Credito">Crédito</option>
                                                                         <option value="Cheque">Cheque</option>
@@ -221,17 +221,6 @@ $cont1++;
                                                                 <td><input type="text" name="fecha_auto" id="fecha_auto" class="campo" style="width: 120px; margin-left: 5px" value="" readonly /></td>
                                                                 <td><label for="fecha_caducidad" style="margin-left: 10px">Fecha caducidad:</label></td>
                                                                 <td><input type="text" name="fecha_caducidad" id="fecha_caducidad" class="campo" style="width: 120px; margin-left: 5px" value="" readonly /></td>
-                                                            </tr>
-                                                        </table>
-
-                                                        <table cellpadding="2" style="margin-left: 10px" >
-                                                            <tr>
-                                                                <td><label for="formas"  style="width: 100%">Formas de Pago:</label></td>
-                                                                <td><select name="formas" id="formas" style="margin-left: 45px; width: 150px">
-                                                                        <option value="Contado">Contado</option>
-                                                                        <option value="Cheque">Cheque</option>
-                                                                        <option value="Targeta">Tarjeta</option>
-                                                                    </select> </td>
                                                             </tr>
                                                         </table>
                                                     </fieldset>  

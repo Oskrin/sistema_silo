@@ -359,8 +359,8 @@ function entrar3() {
                                     var dd = fil[t];
                                     if (dd['iva'] === "Si") {
                                         subtotal = (subtotal + parseFloat(dd['total']));
-                                        iva = parseFloat((subtotal / 1.12)).toFixed(2);
-                                        var sub = (parseFloat(subtotal) - parseFloat(iva)).toFixed(2);
+                                        iva = parseFloat((subtotal / 1.12)).toFixed(3);
+                                        var sub = (parseFloat(subtotal) - parseFloat(iva)).toFixed(3);
                                         mu = (dd['cantidad'] * dd['precio_u']).toFixed(2);
                                         des = ((mu * dd['descuento'])/100).toFixed(2);
                                         descu = (parseFloat(descu) + parseFloat(des)).toFixed(2);
@@ -385,7 +385,7 @@ function entrar3() {
                                         dd = fil[t];
                                         if (dd['iva'] === "No") {
                                             subtotal = (subtotal + parseFloat(dd['total']));
-                                            sub = parseFloat(subtotal).toFixed(2);
+                                            sub = parseFloat(subtotal).toFixed(3);
                                             iva = parseFloat($("#iva").val());
                                             mu = (dd['cantidad'] * dd['precio_u']).toFixed(2);
                                             des = ((mu * dd['descuento'])/100).toFixed(2);
