@@ -19,8 +19,8 @@ function menu_1() {
                           <li><a href="../html/medida.php" target="_blank">Unidades de Medida</a></li>
                     </ul>
                     </li>
+                    <li><a href="../html/archivosExcel.php" target="_blank"> Cargar Productos</a></li>
                     <li><a href="../html/productos.php" target="_blank">Productos</a></li>
-                    
                 </ul>
             </li>
             

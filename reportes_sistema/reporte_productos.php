@@ -51,7 +51,7 @@ $codigo = utf8_decode($codigo);
 
 $dompdf = new DOMPDF();
 $dompdf->load_html($codigo);
-ini_set("memory_limit", "100M");
+ini_set("memory_limit", "100000M");
 $dompdf->set_paper("A4", "portrait");
 $dompdf->render();
 $dompdf->stream('reporte_agrupados_prov.pdf', array('Attachment' => 0));
