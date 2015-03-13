@@ -126,10 +126,10 @@ function fn_reporte(e){
 
 function ventana_mar_cat(e){	
     modal.open({
-        content: "<input type='radio' name='group1' id='excel' value='Reporte en Excel' > <label for='excel'>Reporte en Excel</label> <br><input type='radio' name='group1' id='pdf' value='Reporte Pdf' checked> <label for='pdf'>Reporte Pdf</label> <br><label>Categorías</label><select id='sel_categoria' style='width:150px;float:right'></select><br><label>Marcas</label><select id='sel_marcas' style='width:150px;float:right'></select><br><a 'id='generar' style='cursor:pointer;font-size:12px;margin-left:40px' class='generarReporte_mar_cat' onclick='return fn_reporte_mar_cat(event)' href='#'>Generar Reporte</a>"
-    });
-    $("#sel_marcas").load("../procesos/marcas_combos.php");   
-    $("#sel_categoria").load("../procesos/categorias_combos.php"); 
+        content: "<input type='radio' name='group1' id='excel' value='Reporte en Excel' > <label for='excel'>Reporte en Excel</label> <br><input type='radio' name='group1' id='pdf' value='Reporte Pdf' checked> <label for='pdf'>Reporte Pdf</label> <br><label>Categorías</label><select id='sel_categoria' style='width:150px;float:right'><option></option></select><br><label>Marcas</label><select id='sel_marcas' style='width:150px;float:right'><option></option></select><br><a 'id='generar' style='cursor:pointer;font-size:12px;margin-left:40px' class='generarReporte_mar_cat' onclick='return fn_reporte_mar_cat(event)' href='#'>Generar Reporte</a>"
+    });    
+    $("#sel_marcas").load("../procesos/marcas_combos.php");       
+    $("#sel_categoria").load("../procesos/categorias_combos.php");     
     $('.generarReporte_mar_cat').button();	
     e.preventDefault();  
 }
