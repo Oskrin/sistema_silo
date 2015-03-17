@@ -193,6 +193,7 @@ $cont1++;
                                                         <legend>Detalle Factura</legend>
                                                         <table cellpadding="2" border="0" style="margin-left: 10px">
                                                             <tr>
+                                                                <td><label>Código Barras:</label></td>
                                                                 <td><label>Código:</label></td>   
                                                                 <td><label>Producto:</label></td>   
                                                                 <td><label>Cantidad:</label></td>   
@@ -201,6 +202,7 @@ $cont1++;
                                                             </tr>
 
                                                             <tr>
+                                                                <td><input type="text" name="codigo_barras" id="codigo_barras" class="campo" style="width: 170px"  placeholder="Buscar..."/></td>
                                                                 <td><input type="text" name="codigo" id="codigo" class="campo" style="width: 180px"  placeholder="Buscar..."/></td>
                                                                 <td><input type="text" name="producto" id="producto" class="campo" style="width: 230px"  placeholder="Buscar..."/></td>
                                                                 <td><input type="text" name="cantidad" id="cantidad" class="campo" style="width: 60px" maxlength="10"/></td>
@@ -227,7 +229,7 @@ $cont1++;
                                                             </table>
                                                         </div>
 
-                                                        <div style="margin-left: 625px; margin-top: -85px">
+                                                        <div style="margin-left: 680px; margin-top: -85px">
                                                             <table border="0" cellspacing="2">
                                                                 <tr>
                                                                     <td><label for="total_p" style="width: 100%">Tarifa 0:</label></td>

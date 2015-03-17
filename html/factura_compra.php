@@ -233,8 +233,8 @@ $cont1++;
                                                                 <td><input type="number" name="descuento" id="descuento" class="campo" style="width: 60px" maxlength="10" value="" placeholder="%" min="0"/></td>
                                                                 <td><select id="iva_producto" name="iva_producto" style="width: 80px; display: none" class="campo" >
                                                                         <option value="Elija">Elija</option>
-                                                                        <option value="Si">Si</option> 
-                                                                        <option value="No">No</option> 
+                                                                        <option value="true">Si</option> 
+                                                                        <option value="false">No</option> 
                                                                     </select></td>
                                                                 <!--<td><input type="button" class="btn btn-primary" id='btncargar' style="margin-top: -10px" value="Cargar"></td>-->
                                                                 <td><input type="hidden" name="carga_series" id="carga_series" class="campo" style="width: 100px" maxlength="10"/></td>

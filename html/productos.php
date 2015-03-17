@@ -167,8 +167,8 @@ include '../menus/menu.php';
                                                         <div class="controls">
                                                             <select id="iva" name="iva" class="span4">
                                                                 <option value="">......Seleccione......</option>
-                                                                <option value="Si" selected>Si</option> 
-                                                                <option value="No">No</option> 
+                                                                <option value="true" selected>Si</option> 
+                                                                <option value="false">No</option> 
                                                             </select>
                                                         </div>
                                                     </div>
@@ -282,8 +282,8 @@ include '../menus/menu.php';
                                                         <div class="controls">
                                                             <select id="series" name="series" class="span4">
                                                                 <option value="">......Seleccione......</option>
-                                                                <option value="Si">Si</option> 
-                                                                <option value="No" selected>No</option> 
+                                                                <option value="true">Si</option> 
+                                                                <option value="false" selected>No</option> 
                                                             </select>
                                                         </div>
                                                     </div>

@@ -353,12 +353,12 @@ function comprobar2() {
                             var mu = 0;
                             var des = 0;
                             var descu = 0;
-                            if ($("#iva_producto").val() === "Si") {
+                            if ($("#iva_producto").val() === "true") {
                                 var fil = jQuery("#list").jqGrid("getRowData");
                                 
                                 for (var t = 0; t < fil.length; t++) {
                                     var dd = fil[t];
-                                    if (dd['iva'] === "Si") {
+                                    if (dd['iva'] === "true") {
                                          subtotal = (subtotal + parseFloat(dd['precio_t']));
                                          iva = ((subtotal * 12) / 100).toFixed(2);
                                          var sub = parseFloat(subtotal).toFixed(2);
@@ -374,7 +374,7 @@ function comprobar2() {
                                 $("#desc").val(descu);
                                 $("#tot").val(t_fc);
                             } else {
-                                if ($("#iva_producto").val() === "No") {
+                                if ($("#iva_producto").val() === "false") {
                                     fil = jQuery("#list").jqGrid("getRowData");
                                     subtotal = 0;
                                     t_fc = 0;
@@ -384,7 +384,7 @@ function comprobar2() {
                                     descu = 0;
                                     for (t = 0; t < fil.length; t++) {
                                          dd = fil[t];
-                                        if (dd['iva'] === "No") {
+                                        if (dd['iva'] === "false") {
                                             subtotal = (subtotal + parseFloat(dd['precio_t']));
                                             sub = parseFloat(subtotal).toFixed(2);
                                             iva = parseFloat($("#iva").val());
@@ -1356,7 +1356,7 @@ function inicio() {
                     }
                 });
                     
-                    if (ret.iva === "Si") {
+                    if (ret.iva === "true") {
                         tarifa12 = ($("#total_p2").val() - ret.precio_t).toFixed(2);
                         $("#total_p2").val(tarifa12);
                         iva = $("#iva").val();
@@ -1371,7 +1371,7 @@ function inicio() {
                         $("#desc").val(total_des);
                         $("#tot").val(total_to);
                     } else {
-                        if (ret.iva === "No") {
+                        if (ret.iva === "false") {
                             tarifa0 = ($("#total_p").val() - ret.precio_t).toFixed(2);
                             $("#total_p").val(tarifa0);
                             mul = (ret.cantidad * ret.precio_u).toFixed(2);
@@ -1415,7 +1415,7 @@ function inicio() {
                
                jQuery("#list").jqGrid('setRowData',rowid,{precio_t: tot});
                
-               if (ret.iva === "Si") {
+               if (ret.iva === "true") {
                    var fil = jQuery("#list").jqGrid("getRowData");
                    for (var t = 0; t < fil.length; t++) {
                         var dd = fil[t];
@@ -1444,7 +1444,7 @@ function inicio() {
                     descu = 0;
                     for (t = 0; t < fil.length; t++) {
                     dd = fil[t];
-                    if (dd['iva'] === "No") {
+                    if (dd['iva'] === "false") {
                         subtotal = (subtotal + parseFloat(dd['precio_t']));
                         sub = parseFloat(subtotal).toFixed(2);
                          iva = parseFloat($("#iva").val());
@@ -1471,7 +1471,7 @@ function inicio() {
                
                jQuery("#list").jqGrid('setRowData',rowid,{precio_t: tot});
                
-               if (ret.iva === "Si") {
+               if (ret.iva === "true") {
                    fil = jQuery("#list").jqGrid("getRowData");
                    for (t = 0; t < fil.length; t++) {
                         dd = fil[t];
@@ -1500,7 +1500,7 @@ function inicio() {
                     descu = 0;
                     for (t = 0; t < fil.length; t++) {
                     dd = fil[t];
-                    if (dd['iva'] === "No") {
+                    if (dd['iva'] === "false") {
                         subtotal = (subtotal + parseFloat(dd['precio_t']));
                         sub = parseFloat(subtotal).toFixed(2);
                         iva = parseFloat($("#iva").val());

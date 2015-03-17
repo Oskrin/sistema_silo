@@ -290,7 +290,7 @@ function entrar2() {
                                         }
                                     }
 
-                                    if ($("#iva_producto").val() === "Si") {
+                                    if ($("#iva_producto").val() === "true") {
                                         var fil = jQuery("#list").jqGrid("getRowData");
                                         var subtotal = 0;
                                         var iva = 0;
@@ -300,7 +300,7 @@ function entrar2() {
                                         var descu = 0;
                                         for (var t = 0; t < fil.length; t++) {
                                             var dd = fil[t];
-                                            if (dd['iva'] === "Si") {
+                                            if (dd['iva'] === "true") {
                                                 subtotal = (subtotal + parseFloat(dd['precio_t']));
                                                 iva = parseFloat((subtotal * 0.12)).toFixed(2);
                                                 var sub = (parseFloat(subtotal) - parseFloat(iva)).toFixed(2);
@@ -316,7 +316,7 @@ function entrar2() {
                                         $("#desc").val(descu);
                                         $("#tot").val(t_fc);
                                     } else {
-                                        if ($("#iva_producto").val() === "No") {
+                                        if ($("#iva_producto").val() === "false") {
                                             fil = jQuery("#list").jqGrid("getRowData");
                                             subtotal = 0;
                                             t_fc = 0;
@@ -324,7 +324,7 @@ function entrar2() {
                                             
                                             for (t = 0; t < fil.length; t++) {
                                                 dd = fil[t];
-                                                if (dd['iva'] === "No") {
+                                                if (dd['iva'] === "false") {
                                                     subtotal = (subtotal + parseFloat(dd['precio_t']));
                                                     sub = parseFloat(subtotal).toFixed(2);
                                                     iva = parseFloat($("#iva").val());
@@ -1143,7 +1143,8 @@ function inicio() {
             {name: 'iva', index: 'iva', align: 'center', width: 100, hidden: true}
         ],
         rowNum: 30,
-        width: 780,
+        width: 840,
+        height: 300,
         sortable: true,
         rowList: [10, 20, 30],
         pager: jQuery('#pager'),

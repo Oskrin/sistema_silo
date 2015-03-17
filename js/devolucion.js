@@ -275,7 +275,7 @@ function entrar2() {
                                     }
                                 }
 
-                                if ($("#iva_producto").val() === "Si") {
+                                if ($("#iva_producto").val() === "true") {
                                     var fil = jQuery("#list").jqGrid("getRowData");
                                     var subtotal = 0;
                                     var iva = 0;
@@ -285,7 +285,7 @@ function entrar2() {
                                     var descu = 0;
                                     for (var t = 0; t < fil.length; t++) {
                                         var dd = fil[t];
-                                        if (dd['iva'] === "Si") {
+                                        if (dd['iva'] === "true") {
                                             subtotal = (subtotal + parseFloat(dd['precio_t']));
                                             var sub = parseFloat(subtotal).toFixed(2);
                                             iva = (sub * 0.12).toFixed(2);
@@ -301,14 +301,14 @@ function entrar2() {
                                     $("#desc").val(descu);
                                     $("#tot").val(t_fc);
                                 } else {
-                                    if ($("#iva_producto").val() === "No") {
+                                    if ($("#iva_producto").val() === "false") {
                                         fil = jQuery("#list").jqGrid("getRowData");
                                         subtotal = 0;
                                         t_fc = 0;
                                         iva = 0;
                                         for (t = 0; t < fil.length; t++) {
                                              dd = fil[t];
-                                            if (dd['iva'] === "No") {
+                                            if (dd['iva'] === "false") {
                                                 subtotal = (subtotal + parseFloat(dd['precio_t']));
                                                 sub = parseFloat(subtotal).toFixed(2);
                                                 iva = parseFloat($("#iva").val());
@@ -1276,7 +1276,8 @@ function inicio() {
             {name: 'iva', index: 'iva', align: 'center', width: 100, hidden: true}
         ],
         rowNum: 30,
-        width: 780,
+        width: 840,
+        height: 300,
         sortable: true,
         rowList: [10, 20, 30],
         pager: jQuery('#pager'),
@@ -1318,7 +1319,7 @@ function inicio() {
                         }
                     });
                     
-                    if (ret.iva === "Si") {
+                    if (ret.iva === "true") {
                         tarifa12 = ($("#total_p2").val() - ret.precio_t).toFixed(2);
                         $("#total_p2").val(tarifa12);
                         iva = $("#iva").val();
@@ -1333,7 +1334,7 @@ function inicio() {
                         $("#desc").val(total_des);
                         $("#tot").val(total_to);
                     } else {
-                        if (ret.iva === "No") {
+                        if (ret.iva === "false") {
                             tarifa0 = ($("#total_p").val() - ret.precio_t).toFixed(2);
                             $("#total_p").val(tarifa0);
                             mul = (ret.cantidad * ret.precio_u).toFixed(2);
