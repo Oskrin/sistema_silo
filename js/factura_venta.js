@@ -80,7 +80,7 @@ var dialogo3 =
 var dialogo4 ={
     autoOpen: false,
     resizable: false,
-    width: 240,
+    width: 250,
     height: 150,
     modal: true,
     position: "top",
