@@ -353,11 +353,11 @@ function entrar3() {
                             var mu = 0;
                             var des = 0;
                             var descu = 0;
-                            if ($("#iva_producto").val() === "Si") {
+                            if ($("#iva_producto").val() === "true") {
                                 var fil = jQuery("#list").jqGrid("getRowData");
                                 for (var t = 0; t < fil.length; t++) {
                                     var dd = fil[t];
-                                    if (dd['iva'] === "Si") {
+                                    if (dd['iva'] === "true") {
                                         subtotal = (subtotal + parseFloat(dd['total']));
                                         iva = parseFloat((subtotal / 1.12)).toFixed(3);
                                         var sub = (parseFloat(subtotal) - parseFloat(iva)).toFixed(3);
@@ -373,7 +373,7 @@ function entrar3() {
                                 $("#desc").val(descu);
                                 $("#tot").val(t_fc);
                             } else {
-                                if ($("#iva_producto").val() === "No") {
+                                if ($("#iva_producto").val() === "false") {
                                     fil = jQuery("#list").jqGrid("getRowData");
                                     subtotal = 0;
                                     t_fc = 0;
@@ -383,7 +383,7 @@ function entrar3() {
                                     descu = 0;
                                     for (t = 0; t < fil.length; t++) {
                                         dd = fil[t];
-                                        if (dd['iva'] === "No") {
+                                        if (dd['iva'] === "false") {
                                             subtotal = (subtotal + parseFloat(dd['total']));
                                             sub = parseFloat(subtotal).toFixed(3);
                                             iva = parseFloat($("#iva").val());
@@ -934,7 +934,7 @@ function agregar_proforma() {
                     var mu = 0;
                     var des = 0;
                     var descu = 0;
-                    if (ivas === "Si") {
+                    if (ivas === "true") {
                         fil = jQuery("#list").jqGrid("getRowData");
                         subtotal = 0;
                         iva = 0;
@@ -945,7 +945,7 @@ function agregar_proforma() {
                         
                         for (var t = 0; t < fil.length; t++) {
                             var dd = fil[t];
-                            if (dd['iva'] === "Si") {
+                            if (dd['iva'] === "true") {
                                 subtotal = (subtotal + parseFloat(dd['total']));
                                 var sub = parseFloat(subtotal).toFixed(2);
                                
@@ -962,14 +962,14 @@ function agregar_proforma() {
                         $("#desc").val(descu);
                         $("#tot").val(t_fc);
                     } else {
-                        if (ivas === "No") {
+                        if (ivas === "false") {
                             fil = jQuery("#list").jqGrid("getRowData");
                             subtotal = 0;
                             t_fc = 0;
                             iva = 0;
                             for (t = 0; t < fil.length; t++) {
                                 dd = fil[t];
-                                if (dd['iva'] === "No") {
+                                if (dd['iva'] === "false") {
                                     subtotal = (subtotal + parseFloat(dd['total']));
                                     sub = parseFloat(subtotal).toFixed(2);
                                     
@@ -2187,7 +2187,7 @@ function inicio() {
                 var des = 0;
                 var descu = 0;
                 var fil = jQuery("#list").jqGrid("getRowData"); 
-                if (ret.iva === "Si") {
+                if (ret.iva === "true") {
                    for (var t = 0; t < fil.length; t++) {
                        subtotal = (parseFloat($("#tot").val()) - parseFloat(ret.total)).toFixed(2);
                        iva = parseFloat((subtotal / 1.12)).toFixed(2);
@@ -2202,7 +2202,7 @@ function inicio() {
                      $("#desc").val(descu);
                      $("#tot").val(t_fc);
                 }else{
-                    if (ret.iva === "No") {
+                    if (ret.iva === "false") {
                         for (t = 0; t < fil.length; t++) {
                         subtotal2 = (parseFloat($("#total_p").val()) - parseFloat(ret.total)).toFixed(2);
                         mu = (ret.cantidad * ret.precio_u).toFixed(2);
@@ -2249,7 +2249,7 @@ function inicio() {
                
                jQuery("#list").jqGrid('setRowData',rowid,{total: tot });
                
-               if (ret.iva === "Si") {
+               if (ret.iva === "true") {
                    var fil = jQuery("#list").jqGrid("getRowData");
                    for (var t = 0; t < fil.length; t++) {
                         var dd = fil[t];
@@ -2278,7 +2278,7 @@ function inicio() {
                     descu = 0;
                     for (t = 0; t < fil.length; t++) {
                     dd = fil[t];
-                    if (dd['iva'] === "No") {
+                    if (dd['iva'] === "false") {
                         subtotal = (subtotal + parseFloat(dd['total']));
                         sub = parseFloat(subtotal).toFixed(2);
                         mu = (dd['cantidad'] * dd['precio_u']).toFixed(2);
@@ -2309,7 +2309,7 @@ function inicio() {
                    fil = jQuery("#list").jqGrid("getRowData");
                    for (t = 0; t < fil.length; t++) {
                         dd = fil[t];
-                        if (dd['iva'] === "Si") {
+                        if (dd['iva'] === "true") {
                             subtotal = (subtotal + parseFloat(dd['total']));
                             iva =  parseFloat((subtotal / 1.12)).toFixed(2);
                             sub = (parseFloat(subtotal) - parseFloat(iva)).toFixed(2);
@@ -2334,7 +2334,7 @@ function inicio() {
                     descu = 0;
                     for (t = 0; t < fil.length; t++) {
                     dd = fil[t];
-                    if (dd['iva'] === "No") {
+                    if (dd['iva'] === "false") {
                         subtotal = (subtotal + parseFloat(dd['total']));
                         sub = parseFloat(subtotal).toFixed(2);
                         mu = (dd['cantidad'] * dd['precio_u']).toFixed(2);

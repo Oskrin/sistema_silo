@@ -37,7 +37,7 @@ function menu_1() {
                     <li><a href="" target="_parent">Ventas</a>
                         <ul>
                             <li><a href="../html/factura_venta.php" target="_blank">Ventas facturación</a></li>
-                            <!--<li><a href="../html/notasCredito.php" target="_blank">Notas de crédito</a></li>-->
+                            <li><a href="../html/notasCredito.php" target="_blank">Notas de crédito</a></li>
                         </ul>
                     </li>
 
