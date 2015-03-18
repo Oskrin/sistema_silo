@@ -1,5 +1,5 @@
 ﻿<?php
-require('../fdpf/fpdf.php');
+require('../fpdf/fpdf.php');
 include '../procesos/base.php';
 conectarse();
 class PDF extends FPDF

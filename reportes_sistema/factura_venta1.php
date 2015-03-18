@@ -2,7 +2,7 @@
 
 session_start();
 //include '../fdpf/fpdf.php';
-include '../fdpf/rotation.php';
+include '../fpdf/rotation.php';
 include '../procesos/base.php';
 include '../procesos/convertir.php';
 conectarse();
