@@ -110,11 +110,11 @@ function entrar() {
             } else {
                 if ($("#cantidad").val() === "") {
                     $("#cantidad").focus();
-                    alertify.alert("Ingrese una cantidad");
+                   // alertify.alert("Ingrese una cantidad");
                 } else {
                     if ($("#cantidad").val() === "0") {
                         $("#cantidad").focus();
-                        alertify.alert("Ingrese una cantidad");
+                       // alertify.alert("Ingrese una cantidad");
                     } else {
                         if (parseInt($("#cantidad").val()) > parseInt($("#canti").val())) {
                             $("#cantidad").focus();
@@ -144,11 +144,11 @@ function entrar2() {
             } else {
                 if ($("#cantidad").val() === "") {
                     $("#cantidad").focus();
-                    alertify.alert("Ingrese una cantidad");
+                   // alertify.alert("Ingrese una cantidad");
                 } else {
                     if ($("#cantidad").val() === "0") {
                         $("#cantidad").focus();
-                        alertify.alert("Ingrese una cantidad");
+                        //alertify.alert("Ingrese una cantidad");
                     } else {
                         if (parseInt($("#cantidad").val()) > parseInt($("#canti").val())) {
                             $("#cantidad").focus();
@@ -311,6 +311,7 @@ function entrar2() {
                                                 $("#iva_producto option[value=" + 'Elija' + "]").attr("selected", true);
                                             }
                                         }
+                                        alert(descu);
                                         $("#total_p2").val(sub);
                                         $("#iva").val(iva);
                                         $("#desc").val(descu);
@@ -335,6 +336,7 @@ function entrar2() {
                                                     $("#iva_producto option[value=" + 'Elija' + "]").attr("selected", true);
                                                 }
                                             }
+                                            alert(descu);
                                             $("#total_p").val(sub);
                                             $("#desc").val(descu);
                                             $("#tot").val(t_fc);

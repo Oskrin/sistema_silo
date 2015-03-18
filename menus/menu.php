@@ -31,13 +31,13 @@ function menu_1() {
                     <li><a href="" target="_parent">Compras</a>
                         <ul>
                             <li><a href="../html/factura_compra.php" target="_blank">Productos Bodega</a></li>
-                            <li><a href="../html/devolucionCompra.php" target="_blank">Devolución Compra</a></li>
+                            <!--<li><a href="../html/devolucionCompra.php" target="_blank">Devolución Compra</a></li>-->
                         </ul>
                     </li>
                     <li><a href="" target="_parent">Ventas</a>
                         <ul>
                             <li><a href="../html/factura_venta.php" target="_blank">Ventas facturación</a></li>
-                            <li><a href="../html/notasCredito.php" target="_blank">Notas de crédito</a></li>
+                            <!--<li><a href="../html/notasCredito.php" target="_blank">Notas de crédito</a></li>-->
                         </ul>
                     </li>
 
