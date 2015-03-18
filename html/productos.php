@@ -132,7 +132,7 @@ include '../menus/menu.php';
                                                                     <?php
                                                                     $consulta = pg_query("select * from categoria ");
                                                                     while ($row = pg_fetch_row($consulta)) {
-                                                                        echo "<option id=$row[1] value=$row[1]>$row[1]</option>";
+                                                                        echo "<option id=$row[1] value='".$row[1]."'>$row[1]</option>";
                                                                     }
                                                                     ?>
                                                                 </select>
