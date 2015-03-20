@@ -13,11 +13,11 @@ function menu_1() {
                     <li><a href="../html/proveedores.php"target="_blank">Proveedores</a></li>
                     <li><a href="../html/clientes.php" target="_blank">Clientes</a></li>
                     <li><a href="" target="_parent">Generales</a>
-                    <ul>
-                          <li><a href="../html/categorias.php" target="_blank">Categorias</a></li>
-                          <li><a href="../html/marcas.php" target="_blank">Marcas</a></li>
-                          <li><a href="../html/medida.php" target="_blank">Unidades de Medida</a></li>
-                    </ul>
+                      <ul>
+                            <li><a href="../html/categorias.php" target="_blank">Categorias</a></li>
+                            <li><a href="../html/marcas.php" target="_blank">Marcas</a></li>
+                            <li><a href="../html/medida.php" target="_blank">Unidades de Medida</a></li>
+                      </ul>
                     </li>
                     <li><a href="../html/archivosExcel.php" target="_blank"> Cargar Productos</a></li>
                     <li><a href="../html/productos.php" target="_blank">Productos</a></li>
@@ -76,7 +76,6 @@ function menu_1() {
                                   <li><a href="" id="reporte_dev_compras">Devoluciones en compras</a></li>
                                   <li><a href="" id="resumenFacturas">Facturas por proveedor</a></li>
                                   <li><a href="" id="resumenFacturasCompras">Facturas Agrupadas</a></li>
-                                  
                                </ul>
                             </li>
                         </ul>
