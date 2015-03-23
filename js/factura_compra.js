@@ -634,7 +634,7 @@ function guardar_factura() {
                                                         if (val == 1) {
                                                             alertify.alert("Factura Guardada correctamente", function(){
                                                             window.open("../reportes/reportes/factura_compra.php?hoja=A4&id="+$("#comprobante").val(),'_blank');    
-                                                            //location.reload();
+                                                            location.reload();
                                                             });
                                                         }
                                                     }
