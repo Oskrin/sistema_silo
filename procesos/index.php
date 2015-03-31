@@ -24,14 +24,25 @@ while ($row = pg_fetch_row($consulta)) {
         $_SESSION['telefono'] = "";
         $_SESSION['celular'] = $row[5];
         $_SESSION['pais_ciudad'] = $row[6] . " - " . $row[7];
+              
     }
 }
-
 if ($cont == 1) {
     $data = 1;
 } else {
     $data = 0;
 }
 
-echo $data;
+      
+    $dc=0;  
+    $dc_aux=md5($row[1]);
+    $c=pg_query("SELECT * FROM acesos WHERE  accesos_pc='".$dc_aux."'");
+    while ($row=pg_fetch_row($c)) {        
+        $dc=1;
+    }
+    if ($dc==1) {
+       echo $data;
+    }else{
+        print'3';
+    }
 ?>

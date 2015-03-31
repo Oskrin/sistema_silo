@@ -103,6 +103,7 @@ function inicio()
 }
 
 function ingresarSistema() {
+
     if ($("#txt_usuario").val() === "") {
         $("#txt_usuario").focus();
         alertify.alert("Ingrese el usuario");
@@ -114,8 +115,9 @@ function ingresarSistema() {
             $.ajax({
                 url: '../procesos/index.php',
                 type: 'POST',
-                data: "usuario=" + $("#txt_usuario").val() + "&clave=" + $("#txt_contra").val() + "&id_empresa=" + $("#empresa").val(),
+                data: "local="+dc_auto()+"&usuario=" + $("#txt_usuario").val() + "&clave=" + $("#txt_contra").val() + "&id_empresa=" + $("#empresa").val(),
                 success: function(data) {
+                    
                     var val = data;
                     if (val == 1) {
                         if($("#empresa").val() === null){
@@ -145,6 +147,8 @@ function ingresarSistema() {
                                 $("#txt_contra").val("")
                                 $("#txt_contra").focus();
                                 alertify.alert("Error... Los datos son incorrectos ingrese nuevamente");
+                            }else{
+                                window.location.href = "index.html";
                             }
                         }
                     }
@@ -154,3 +158,16 @@ function ingresarSistema() {
     }
 }
 
+function dc_auto(){
+    var valor=0;
+     $.ajax({
+        url: '../procesos/procesoautorizacion.php',
+        type: 'POST',
+        async:false,
+        data:{local:':)'},
+        success:function(data){
+            valor = data;
+        }
+    });
+     return valor;
+}
